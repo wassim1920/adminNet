@@ -3,8 +3,8 @@ import { useState } from "react";
 import "./navbar.scss";
 import"./navbar.css"
 import {Link, useNavigate} from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleQuestion, faGear } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faCircleQuestion, faGear } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -58,14 +58,14 @@ const Navbar = () => {
           <div className="profile">
             <ArrowDropDown className="icon" />
             <div className="options">
-            <span>
+            {/* <span>
               <FontAwesomeIcon icon={faCircleQuestion} style={{color: "#999fa8",}} className="opicons" />
             Help Center
             </span>
               <span>
                 <FontAwesomeIcon icon={faGear}  style={{color: "#999fa8",}}  className="opicons" />
                 Settings
-                </span>
+                </span> */}
               <span onClick={handelLogout}>Logout</span>
             </div>
           </div>
