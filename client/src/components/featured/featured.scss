@@ -36,8 +36,8 @@
   
   .mute-button {
     position: relative;
-    left: 245%;
-    top: 280px;
+    left: 90%;
+    bottom: 27%;
     width: 40px;
     background-color: transparent;
     border: none;
@@ -47,7 +47,7 @@
     outline: none;
     transition: color 0.3s ease-in-out;
     & .v{
-      font-size: 30px;
+      font-size: 40px;
     }
     &:hover {
       color: #ff5733; 
