@@ -1,0 +1,122 @@
+.featured {
+  height: 95vh;
+  position: relative;
+
+  .category {
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    align-items: center;
+
+    select {
+      cursor: pointer;
+      background-color: var(--main-color);
+      border: 1px solid white;
+      color: white;
+      margin-left: 20px;
+      padding: 5px;
+    }
+  }
+  .vd{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 50px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .mute-button {
+    position: relative;
+    left: 245%;
+    top: 280px;
+    width: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    color: #fff;
+    outline: none;
+    transition: color 0.3s ease-in-out;
+    & .v{
+      font-size: 30px;
+    }
+    &:hover {
+      color: #ff5733; 
+    }
+  }
+
+  .info {
+    width: 35%;
+    position: absolute;
+    left: 50px;
+    bottom: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 400px;
+      height: 100px;
+    }
+
+    .desc {
+      margin: 20px 0px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .limit{
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+      left: 1385px;
+      background-color: rgb(138, 137, 137);
+      width: 70px;
+      height: 30px;
+      color: black;
+    }
+
+    .buttons {
+      display: flex;
+
+      button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: 500;
+        margin-right: 10px;
+        cursor: pointer;
+
+        &.play {
+          background-color: white;
+          width: 150px;
+          color: var(--main-color);
+        }
+
+        &.more {
+          background-color: gray;
+          width: 150px;
+          color: white;
+        }
+        &:hover{
+          background-color: rgb(213, 210, 210);
+          transition: 0.5s;
+        }
+        span {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
